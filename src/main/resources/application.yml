@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: mywebsocket
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    encoding: UTF-8
+    suffix: .html
+    cache: false
+    content-type: text/html
+  mvc:
+    static-path-pattern: /**
+
+server:
+  port: 8080
+  context-path: /pipeline
+
+#eureka:
+  #client:
+  #serviceUrl:
+  #defaultZone: http://venus-demo-registration-service:32401/eureka/
+  #defaultZone: http://192.168.0.151/eureka/
+  #healthcheck:
+  #enabled: true
+  #instance:
+    #prefer-ip-address: true
+    #health-check-url-path: ${server.context-path}/health
+    #status-page-url-path: ${server.context-path}/info
+
+#logging.config: classpath:log4j2.xml
